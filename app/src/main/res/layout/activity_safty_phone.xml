@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/include_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8"
+        android:textColor="@color/text_blue"
+        android:textSize="@dimen/size_13"
+        android:text="该手机号已被占用"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_normal"
+        android:padding="@dimen/dp_15">
+
+        <EditText
+            android:id="@+id/phone_change_phonecell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18674075216"
+            android:maxLength="11"
+            android:inputType="number"
+            android:textColorHint="@color/text_gray_B0"
+            android:background="@color/white"
+            android:textColor="@color/text_black_2f"
+            android:textSize="@dimen/size_15" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text=""
+            android:textColor="@color/text_gray_B0"
+            android:textSize="@dimen/size_15"
+            android:id="@+id/textView2" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/myLine"
+        android:layout_marginLeft="@dimen/dp_15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_normal"
+        android:padding="@dimen/dp_15">
+
+        <EditText
+            android:id="@+id/phone_change_yanzhengma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="验证码"
+            android:textColorHint="@color/text_gray_B0"
+            android:maxLength="6"
+            android:background="@color/white"
+            android:textColor="@color/text_black_2f"
+            android:textSize="@dimen/size_15" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:inputType="textPassword"
+            android:text=""
+            android:textColor="@color/text_gray_B0"
+            android:textSize="@dimen/size_15" />
+
+        <TextView
+            android:id="@+id/phone_change_get_yanzhengma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取验证码"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:textColor="@color/text_orange"
+            android:background="@drawable/shape_categroy_tagdo"
+            />
+    </LinearLayout>
+
+    <View style="@style/myLine" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/contain_alls"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.48">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/bg_black_trans" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white_high" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/review_image"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:scaleType="fitXY"
+            android:src="@mipmap/show_img" />
+
+        <com.msport.clientmaster.view.SimpleRatingBar
+            android:id="@+id/review_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/review_image"
+            app:srb_fillColor="@color/material_amber300"
+            app:srb_borderColor="@color/material_amber500"
+            app:srb_pressedFillColor="@color/material_amberA400"
+            app:srb_pressedBorderColor="@color/material_amberA700"
+            app:srb_starSize="@dimen/dp_35"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/review_rating"
+            android:gravity="center"
+            android:text="评价一下教练的水平吧！"
+            android:textColor="@color/text_gray_97"
+            android:textSize="@dimen/size_15" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_12">
+
+            <ImageView
+                android:id="@+id/review_left_back"
+                android:layout_width="@dimen/dp_18"
+                android:layout_height="@dimen/dp_18"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/back_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的评论"
+                android:textColor="@color/white_high"
+                android:textSize="@dimen/size_18" />
+
+            <TextView
+                android:id="@+id/review_commit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="发布"
+                android:textColor="@color/white_high"
+                android:textSize="@dimen/size_14" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <View
+        style="@style/devider"
+        android:layout_height="@dimen/dp_12" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_high">
+
+        <EditText
+            android:id="@+id/review_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_12"
+            android:background="@color/white_high"
+            android:hint="说说教练对亮点和不足吧"
+            android:maxLength="255"
+            android:maxLines="5"
+            android:textColor="@color/text_black_5c"
+            android:textColorHint="@color/text_gray_97"
+            android:textSize="@dimen/size_14" />
+
+    </FrameLayout>
+
+
+    <View style="@style/myLine" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_high">
+
+        <com.msport.clientmaster.view.MyTagViewGroup
+            android:id="@+id/review_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_12" />
+    </FrameLayout>
+</LinearLayout>

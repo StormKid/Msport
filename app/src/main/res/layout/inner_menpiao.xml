@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:padding="@dimen/dp_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_normal"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/dp_63"
+            android:layout_height="@dimen/dp_55"
+            android:src="@mipmap/show_img"
+            android:scaleType="fitXY"
+            android:id="@+id/inner_menpiao_img"
+            />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/inner_menpiao_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_15"
+                android:text="单人单次游泳卡1次"
+                android:textColor="@color/text_black_5c"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/inner_menpiao_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_red"
+                    android:text="¥39.9"
+                    android:textSize="@dimen/size_15"
+                    />
+                <TextView
+                    android:id="@+id/inner_menpiao_outprice"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray_97"
+                    android:text="门市价¥50"
+                    android:textSize="@dimen/size_15"
+                    />
+                <TextView
+                    android:id="@+id/inner_menpiao_salenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray_97"
+                    android:text="已售:160"
+                    android:textSize="@dimen/size_13"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

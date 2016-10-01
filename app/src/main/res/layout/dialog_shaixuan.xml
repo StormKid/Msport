@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/well_contain"
+    android:background="@color/white_high"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:paddingBottom="@dimen/dp_15"
+            android:paddingLeft="@dimen/dp_30"
+            android:paddingRight="@dimen/dp_30"
+            android:paddingTop="@dimen/dp_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重置"
+            android:textColor="@color/text_gray_7c"
+            android:textSize="@dimen/size_13"
+            android:id="@+id/pop_reset" />
+
+        <TextView
+            android:id="@+id/pop_yes"
+            android:paddingBottom="@dimen/dp_15"
+            android:paddingLeft="@dimen/dp_30"
+            android:paddingRight="@dimen/dp_30"
+            android:paddingTop="@dimen/dp_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textColor="@color/text_orange"
+            android:textSize="@dimen/size_13"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格区间"
+            android:textSize="@dimen/size_15"
+            android:textColor="@color/text_black_333"
+            />
+
+        <LinearLayout
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pop_price_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不限"
+                style="@style/shape_tag_change"
+                />
+
+            <EditText
+                android:maxLength="6"
+                android:inputType="phone"
+                android:id="@+id/pop_price_min"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/shape_tag_change"
+                android:textColorHint="@color/text_gray_7c"
+                android:hint="最低价格"
+                />
+
+            <View
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_8"
+                android:layout_width="@dimen/dp_13"
+                android:layout_height="@dimen/size_0.5"
+                android:background="@color/text_gray_97"/>
+
+            <EditText
+                android:maxLength="6"
+                android:inputType="phone"
+                android:id="@+id/pop_price_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/shape_tag_change"
+                android:hint="最高价格"
+                android:textColorHint="@color/text_gray_7c"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开课时间"
+            android:textSize="@dimen/size_15"
+            android:textColor="@color/text_black_333"
+            />
+
+        <LinearLayout
+            android:background="@color/white"
+            android:visibility="gone"
+            android:id="@+id/pop_week"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pop_week_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不限"
+                style="@style/shape_tag_change"
+                />
+
+            <TextView
+                android:id="@+id/pop_one_week"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/shape_tag_change"
+                android:text="一周"
+                />
+
+            <TextView
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/shape_tag_change"
+                android:text="二周"
+                android:id="@+id/pop_two_week" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pop_sex_tv"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="教练性别"
+            android:textSize="@dimen/size_15"
+            android:textColor="@color/text_black_333"
+            />
+
+        <LinearLayout
+            android:background="@color/white"
+            android:id="@+id/pop_sex"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pop_sex_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不限"
+                style="@style/shape_tag_change"
+                />
+
+            <TextView
+                android:id="@+id/pop_sex_man"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/shape_tag_change"
+                android:text="  男  "
+                />
+
+            <TextView
+                android:id="@+id/pop_sex_woman"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/shape_tag_change"
+                android:text="  女  "
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/myLine" />
+
+</LinearLayout>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_high"
+    android:orientation="vertical">
+    <include layout="@layout/include_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.msport.clientmaster.view.HomeScrollView
+            android:id="@+id/menpiao_detail_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:id="@+id/menpiao_detail_title_no_scr"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_185">
+
+                    <ImageView
+                        android:id="@+id/bisai_menpiao_detail_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/menpiao_detail" />
+
+                    <RelativeLayout
+                        android:id="@+id/menpiao_detail_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <View style="@style/myLine" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_12"
+                    android:text="比赛安排"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_16" />
+
+                <View style="@style/myLine" />
+
+                <LinearLayout
+                    android:id="@+id/menpiao_detail_adress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_normal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp_12"
+                        android:paddingTop="@dimen/dp_18"
+                        android:text="比赛地点："
+                        android:textColor="@color/text_black_2f"
+                        android:textSize="@dimen/dp_15" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dp_12"
+                        android:paddingRight="@dimen/dp_12"
+                        android:paddingTop="@dimen/dp_12">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp_8"
+                            android:layout_marginTop="@dimen/dp_8">
+
+                            <TextView
+                                android:id="@+id/bisai_menpiao_detail_locaition"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:text="武昌中南体育馆"
+                                android:textColor="@color/text_black_2f"
+                                android:textSize="@dimen/dp_15" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="2.3km"
+                                android:textColor="@color/text_black_333"
+                                android:textSize="@dimen/size_14"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/bisai_menpiao_detail_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="武昌区中南路终南街道口100号"
+                            android:textColor="@color/text_black_5c"
+                            android:textSize="@dimen/dp_15" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_18"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/dp_5"
+                        android:src="@mipmap/jinru_back" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bisai_menpiao_detail_cellphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_high"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_high"
+                        android:text="联系方式："
+                        android:textColor="@color/text_black_2f"
+                        android:textSize="@dimen/size_15" />
+
+                    <TextView
+                        android:id="@+id/menpiao_detail_phonenum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13125124389"
+                        android:textColor="@color/text_blue"
+                        android:textSize="@dimen/size_15" />
+                </LinearLayout>
+
+                <View
+                    style="@style/myLine"
+                    android:layout_marginTop="@dimen/dp_13" />
+
+
+                <View
+                    style="@style/devider"
+                    android:layout_height="@dimen/dp_12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_high"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp_15"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:paddingRight="@dimen/dp_12"
+                    android:paddingTop="@dimen/dp_15">
+
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="门票内容"
+                        android:textColor="@color/text_black_2f"
+                        android:textSize="@dimen/size_16" />
+
+
+                </LinearLayout>
+
+                <View style="@style/myLine" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_high"
+    android:padding="@dimen/dp_12"
+    >
+    <TextView
+        android:id="@+id/menpiao_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="单人单次游泳卡"
+        android:textColor="@color/text_black_5c"
+        android:textSize="@dimen/size_15"
+        />
+    <TextView
+        android:id="@+id/menpiao_detail_cishu"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="1次"
+        android:textColor="@color/text_black_5c"
+        android:textSize="@dimen/size_15"
+        />
+    <TextView
+        android:id="@+id/menpiao_detail_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¥260"
+        android:textColor="@color/text_red"
+        android:textSize="@dimen/size_15"
+        />
+
+
+</LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_12">
+
+                    <com.msport.clientmaster.view.JustifyTextView
+                        android:id="@+id/bisai_menpiao_detail_notice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_high"
+                        android:text="@string/bisai_show"
+                        android:textColor="@color/text_black_5c"
+                        android:textSize="@dimen/size_15" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </com.msport.clientmaster.view.HomeScrollView>
+
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/go_to_pay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:background="@color/bg_orange"
+        android:text="立即购买"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_16" />
+</LinearLayout>
+
+

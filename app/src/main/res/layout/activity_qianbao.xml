@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_f0f2f5"
+    >
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@id/refresh_layout"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical"
+        android:background="@color/bg_black_383d42"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_40"
+                android:src="@mipmap/back_white"
+                android:padding="@dimen/dp_12"
+                android:id="@+id/qianbao_back"
+                />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_40"
+                android:src="@mipmap/agree"
+                android:padding="@dimen/dp_12"
+                android:id="@+id/qianbao_agree"
+                />
+            
+        </RelativeLayout>
+
+        <TextView
+            android:padding="@dimen/dp_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前余额（元）"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16"
+            />
+        <TextView
+            android:padding="@dimen/dp_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_40"
+            android:textColor="@color/white"
+            android:text="0.00"
+            android:id="@+id/qianbao_money"
+            />
+        <RelativeLayout
+            android:id="@+id/qianbao_detail"
+            android:layout_width="match_parent"
+            android:background="@color/bg_black_464f58"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/qianbao_xiaofei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消费收支"
+                android:textColor="@color/text_gray_97"
+                android:textSize="@dimen/size_16"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看详情"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_gray_97"
+                android:textSize="@dimen/size_14"
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/qianbao_chongzhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_12"
+        android:background="@drawable/selector_normal"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/chongzhi"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="充值"
+            android:textSize="@dimen/size_16"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="余额充值"
+            android:textColor="@color/text_gray_97"
+            android:textSize="@dimen/size_12"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/jinru"
+            android:paddingLeft="@dimen/dp_10"
+            />
+    </LinearLayout>
+
+    <View style="@style/myLine" android:layout_marginLeft="@dimen/dp_12"/>
+    <LinearLayout
+        android:id="@+id/qianbao_tixian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_12"
+        android:background="@drawable/selector_normal"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/tixian"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="提现"
+            android:textSize="@dimen/size_16"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="可提现"
+            android:textColor="@color/text_gray_97"
+            android:textSize="@dimen/size_12"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/jinru"
+            android:paddingLeft="@dimen/dp_10"
+            />
+    </LinearLayout>
+    <View style="@style/myLine"/>
+    </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

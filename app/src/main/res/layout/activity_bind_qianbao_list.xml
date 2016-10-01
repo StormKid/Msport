@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/all_contain"
+    >
+
+    <include layout="@layout/include_title"/>
+    <View style="@style/devider"
+        android:layout_height="@dimen/dp_12"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_12"
+        >
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="选择绑定方式"
+            android:textColor="@color/text_black_333"
+            android:textSize="@dimen/size_16" />
+
+
+    </LinearLayout>
+
+
+    <View style="@style/myLine"/>
+    <LinearLayout
+        android:id="@+id/fagnshi_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_12"
+        android:background="@drawable/selector_normal"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/weixin"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="微信"
+            android:textSize="@dimen/size_16"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="立即绑定"
+            android:textColor="@color/text_gray_97"
+            android:textSize="@dimen/size_12"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/jinru"
+            android:paddingLeft="@dimen/dp_10"
+            />
+    </LinearLayout>
+
+    <View style="@style/myLine"
+        android:layout_marginLeft="@dimen/dp_12"
+        />
+    
+    <LinearLayout
+        android:id="@+id/fangshi_zhifubao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_12"
+        android:background="@drawable/selector_normal"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/zhifubao"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="支付宝"
+            android:textSize="@dimen/size_16"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="立即绑定"
+            android:textColor="@color/text_gray_97"
+            android:textSize="@dimen/size_12"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/jinru"
+            android:paddingLeft="@dimen/dp_10"
+            />
+    </LinearLayout>
+
+    <View style="@style/devider"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

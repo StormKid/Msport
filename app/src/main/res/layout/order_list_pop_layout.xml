@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:id="@+id/contain_alls"
+    android:background="@color/transparent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_title"
+        android:visibility="invisible"
+        android:id="@+id/title"
+        />
+    <LinearLayout
+        android:id="@+id/all_contain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white_high"
+        >
+
+        <TextView
+            android:id="@+id/course_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_16"
+            android:text="课程"
+            android:textColor="@color/text_black_2f"
+            android:paddingTop="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_40"
+            android:paddingLeft="@dimen/dp_40"
+            />
+
+        <View style="@style/myLine"/>
+        <TextView
+            android:id="@+id/coach_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black_2f"
+            android:textSize="@dimen/size_16"
+            android:text="私教"
+            android:paddingTop="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_40"
+            android:paddingLeft="@dimen/dp_40"
+            />
+        <View style="@style/myLine"/>
+        <TextView
+            android:id="@+id/yueqiu_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/text_black_2f"
+            android:text="约球"
+            android:paddingTop="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_40"
+            android:paddingLeft="@dimen/dp_40"
+            />
+        <View style="@style/myLine"/>
+        <TextView
+            android:id="@+id/menpiao_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black_2f"
+            android:textSize="@dimen/size_16"
+            android:text="门票"
+            android:paddingTop="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_40"
+            android:paddingLeft="@dimen/dp_40"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

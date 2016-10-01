@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white_high"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingLeft="@dimen/dp_13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_13"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/dp_95"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_13"
+            android:text="场馆"
+            android:textColor="@color/text_yellow"
+            android:textSize="@dimen/size_13" />
+
+        <View
+            android:layout_width="@dimen/size_0.5"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_12"
+            android:background="@color/line_bg_d9" />
+
+        <TextView
+            android:id="@+id/coach_child_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="中南体育馆"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/size_13" />
+    </LinearLayout>
+
+
+</LinearLayout>

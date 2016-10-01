@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_margin="@dimen/dp_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_1"
+        android:background="@drawable/shape_categroy_tagnone"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/dp_113"
+            android:layout_height="@dimen/dp_113"
+            android:src="@mipmap/show_img"
+            />
+            <View
+                android:layout_width="@dimen/dp_113"
+                android:layout_height="@dimen/dp_113"
+                android:background="@color/bg_black_trans"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/youhuiquan_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_40"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_15"
+                    android:textColor="@color/white"
+                    android:text="元"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/youhuiquan_tiaojian"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="满100元可用"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_12"
+                />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp_12"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/youhuiquan_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_17"
+                    android:textColor="@color/text_black_2f"
+                    android:text="瑜伽课程优惠劵"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    />
+                <TextView
+                    android:id="@+id/youhuiquan_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/text_gray_97"
+                    android:text="仅限购买瑜伽课程使用"
+                    android:maxLines="1"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/size_10"
+                    android:ellipsize="end"
+                    />
+                <TextView
+                    android:id="@+id/youhuiquan_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_12"
+                    android:textColor="@color/text_gray_97"
+                    android:text="2016.07.08到期"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="@dimen/size_0.5"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg_gray_D8"
+                    />
+
+                <TextView
+                    android:id="@+id/youhuiquan_get"
+                    android:paddingTop="@dimen/dp_5"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击\n领取"
+                    android:textColor="@color/text_orange"
+                    />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

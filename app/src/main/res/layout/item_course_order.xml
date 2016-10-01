@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_high"
+    android:gravity="center"
+    android:id="@+id/contain_alls"
+    android:orientation="vertical">
+
+
+    <View style="@style/devider"
+        android:layout_height="@dimen/dp_12"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dp_12">
+
+            <TextView
+                android:id="@+id/order_course_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="瑜伽课程"
+                android:textColor="@color/text_black_5c"
+                android:textSize="@dimen/size_14" />
+
+            <TextView
+                android:id="@+id/order_course_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已完成"
+                android:textColor="@color/text_orange"
+                android:textSize="@dimen/size_14" />
+
+
+        </LinearLayout>
+
+        <View style="@style/myLine"/>
+
+        <LinearLayout
+            android:id="@+id/select_detail"
+            android:background="@drawable/selector_normal"
+            android:padding="@dimen/dp_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/order_course_image"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_65"
+                android:src="@mipmap/show_img"
+                android:scaleType="fitXY"
+                />
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/order_course_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="最炫民族风课程"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_16"
+                    />
+                <TextView
+                    android:id="@+id/order_course_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最炫民族风课程"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/size_14"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:textColor="@color/text_gray_97"
+                    />
+                <TextView
+                    android:id="@+id/order_course_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#3课时"
+                    android:textColor="@color/text_blue"
+                    android:textSize="@dimen/size_12"
+                    />
+
+
+
+            </LinearLayout>
+            
+            <TextView
+                android:id="@+id/order_course_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="¥4000"
+                android:textColor="@color/text_black_5c"
+                android:textSize="@dimen/size_14"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginLeft="@dimen/dp_12"
+            style="@style/myLine"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_12"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/zhongjia"
+                android:text="总价："
+                android:textSize="@dimen/size_14"
+                />
+
+            <TextView
+                android:id="@+id/order_course_totle_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/zhongjia"
+                android:textColor="@color/text_red"
+                android:text="¥4000"
+                android:textSize="@dimen/size_14"
+                />
+
+            <TextView
+                android:id="@+id/order_course_commit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即支付"
+                android:textSize="@dimen/size_14"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_orange"
+                android:background="@drawable/shape_categroy_tagdo"
+                android:paddingBottom="@dimen/dp_3"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8"
+                android:paddingTop="@dimen/dp_3"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

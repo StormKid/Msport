@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.msport.clientmaster.view.ObservableScrollView
+            android:id="@+id/show_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/line_bg_d9"
+            android:dividerHeight="@dimen/size_0.5"
+            android:listSelector="@color/transparent"
+            android:background="@color/white"
+            android:scrollbars="none"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+        <FrameLayout
+            android:id="@+id/hint_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_black_trans"
+            android:visibility="gone" />
+
+
+
+    <FrameLayout
+        android:id="@+id/show_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include layout="@layout/share_foot"
+        android:id="@+id/buttom_show"
+        />
+
+</RelativeLayout>

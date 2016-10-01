@@ -1,0 +1,191 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="android:colorBackgroundCacheHint">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="LanchTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowEnterAnimation">@anim/hold</item>
+        <item name="android:windowExitAnimation">@anim/fade</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <!-- 显示line -->
+    <style name="myLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_0.5</item>
+        <item name="android:background">@color/line_bg_d9</item>
+    </style>
+
+    <!-- 底部动画显示界面 -->
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="AnimTop" parent="@android:style/Animation">
+        <item name="android:windowExitAnimation">@anim/push_bottom_top_out</item>
+        <item name="android:windowEnterAnimation">@anim/push_bottom_top_in</item>
+
+    </style>
+
+
+    <!-- 弹窗显示的style -->
+    <style name="MyDialogStyleBottom" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="colorPrimaryDark">@color/transparent</item>
+    </style>
+
+
+    <!-- 顶部弹出 -->
+    <style name="MyTopDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimTop</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <!--显示底部弹窗的背景-->
+    <style name="CustomDatePickerDialog" parent="@style/MyDialogStyleBottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <!-- 弹窗显示的style -->
+    <style name="normalDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+
+    <!--tag显示-->
+    <style name="shape_tag_change">
+        <item name="android:paddingRight">@dimen/dp_18</item>
+        <item name="android:paddingLeft">@dimen/dp_18</item>
+        <item name="android:paddingTop">@dimen/dp_8</item>
+        <item name="android:paddingBottom">@dimen/dp_8</item>
+        <item name="android:background">@drawable/shape_categroy_tagnone</item>
+        <item name="android:textSize">@dimen/size_14</item>
+        <item name="android:textColor">@color/text_gray_7c</item>
+    </style>
+
+
+    <!--隔栏-->
+    <style name="devider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/bg_gray_f0f2f5</item>
+    </style>
+
+    <!-- 登陆注册条目 -->
+    <style name="put_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/dp_15</item>
+        <item name="android:paddingBottom">@dimen/dp_15</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 用输入框布局style -->
+    <style name="user_set_in">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/text_black_5c</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/text_gray_97</item>
+        <item name="android:paddingBottom">@dimen/dp_15</item>
+        <item name="android:textSize">@dimen/size_15</item>
+    </style>
+
+
+    <style name="user_set_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@color/text_gray_97</item>
+        <item name="android:textColor">@color/text_black_5c</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/size_15</item>
+    </style>
+
+
+    <!-- 底部按钮控件 -->
+    <style name="buttom_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_40</item>
+        <item name="android:textSize">@dimen/size_16</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 透明背景的dialog -->
+    <style name="trans_dialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- 正常背景的dialog -->
+    <style name="no_trans_dialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

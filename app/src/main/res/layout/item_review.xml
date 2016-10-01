@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/dp_12">
+
+    <ImageView
+        android:id="@+id/review_list_img"
+        android:layout_width="@dimen/dp_25"
+        android:layout_height="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_5"
+        android:src="@mipmap/touxiang"
+        >
+
+    </ImageView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingBottom="@dimen/size_10"
+
+        >
+        <TextView
+            android:id="@+id/review_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="文海无敌"
+            android:textSize="@dimen/size_14"
+            android:textColor="@color/text_black_2f"
+            />
+
+        <LinearLayout
+            android:id="@+id/add_review_coachdegree"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_5" >
+
+            <ImageView
+                android:layout_width="@dimen/dp_13"
+                android:layout_height="@dimen/dp_13"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/dp_8"
+                android:src="@mipmap/star_tag" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_13"
+                android:layout_height="@dimen/dp_13"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/dp_8"
+                android:src="@mipmap/star_tag" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_13"
+                android:layout_height="@dimen/dp_13"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/dp_8"
+                android:src="@mipmap/star_tag" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="@dimen/dp_13"
+                android:layout_height="@dimen/dp_13"
+                android:layout_marginRight="@dimen/dp_8"
+                android:src="@mipmap/star_tag" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="@dimen/dp_13"
+                android:layout_height="@dimen/dp_13"
+                android:layout_marginRight="@dimen/dp_8"
+                android:src="@mipmap/star_tag" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/review_list_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black_5c"
+            android:text="08.06 23:13"
+            android:textSize="@dimen/size_12"
+            />
+
+
+    </LinearLayout>
+
+    <com.msport.clientmaster.view.JustifyTextView
+        android:id="@+id/review_list_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="在茫茫的人海中我遇到了你，你却不说话我 都不知道说什么东西的再远的距离我都会去 寻找你的我是文海我怕谁，是不是你说呢你 别跑等我来找你不走我们两个决战到天亮快 点来呀我在等你呀李可"
+        android:textSize="@dimen/size_15"
+        android:textColor="@color/text_black_5c"
+        />
+
+</LinearLayout>
+
+</LinearLayout>

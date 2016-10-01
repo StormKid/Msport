@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/contain_alls"
+    android:background="@color/white_high">
+
+    <include layout="@layout/include_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_8">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_40"
+                    android:src="@mipmap/touxiang" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dp_13">
+
+                    <TextView
+                        android:id="@+id/yueqiu_detail_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="刘德华"
+                        android:textColor="@color/text_black_333"
+                        android:textSize="@dimen/size_17" />
+
+                    <TextView
+                        android:id="@+id/yueqiu_detail_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="决战到天亮"
+                        android:textColor="@color/text_black_333"
+                        android:textSize="@dimen/size_14" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥40"
+                    android:id="@+id/yueqiu_detail_price"
+                    android:textColor="@color/text_red"
+                    android:textSize="@dimen/size_20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AA制活动"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+                <View
+                    android:layout_width="@dimen/size_0.5"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:background="@color/line_bg_d9" />
+
+                <TextView
+                    android:id="@+id/yueqiu_detail_about"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="报名情况9/10人"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+                <View
+                    android:layout_width="@dimen/size_0.5"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:background="@color/line_bg_d9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="满8人开始"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+
+            <View
+                style="@style/devider"
+                android:layout_height="@dimen/dp_12" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp_15"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_15">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="活动信息"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_16" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#羽毛球"
+                    android:textColor="@color/text_blue"
+                    android:textSize="@dimen/size_14" />
+
+            </LinearLayout>
+
+            <View style="@style/myLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_15">
+
+                <TextView
+                    android:id="@+id/yueqiu_detail_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动地点：武昌中南体育馆终南路街道口10"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_15" />
+
+                <View
+                    style="@style/myLine"
+                    android:layout_marginTop="@dimen/dp_15" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="组织者电话：报名后查看"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_15" />
+
+                <View
+                    style="@style/myLine"
+                    android:layout_marginTop="@dimen/dp_15" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动时间：2016.07.07    11:00-12:00"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_15"
+                    android:id="@+id/yueqiu_detail_time" />
+
+                <View
+                    style="@style/myLine"
+                    android:layout_marginTop="@dimen/dp_15" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_15"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_15">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/yueqiu_detail_image_container"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看报名球友"
+                        android:textColor="@color/text_black_333"
+                        android:textSize="@dimen/size_14" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:padding="@dimen/dp_8"
+                        android:src="@mipmap/jinru_back" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/devider"
+                android:layout_height="@dimen/dp_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp_15"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_15">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="活动介绍"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_16" />
+
+
+            </LinearLayout>
+
+            <View style="@style/myLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:padding="@dimen/dp_12">
+
+                <com.msport.clientmaster.view.JustifyTextView
+                    android:id="@+id/course_detail_jieshao"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="打击打击售价为大多数是飒飒是教大家大文件的案件达快递大家多说几句覅是大家都大家是电视剧大 家圣诞节大家说大家说大家说的的很多好玩等会我 大大大大大大大弟弟安徽的安定好的啊大的机会大家二季度经济网IE大家都记得加加班"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_15" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+      <Button
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.08"
+    android:background="@color/bg_orange"
+    android:text="立即报名"
+    android:textColor="@color/white_high"
+    android:id="@+id/go_to_pay"
+    android:textSize="@dimen/size_16"
+    />
+
+</LinearLayout>

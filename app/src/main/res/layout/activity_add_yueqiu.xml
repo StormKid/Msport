@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/contain_alls"
+    android:background="@color/white_high"
+    >
+
+    <include layout="@layout/include_title" />
+
+    <View
+        style="@style/devider"
+        android:layout_height="@dimen/dp_12" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动名称"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_16" />
+
+                <EditText
+                    android:id="@+id/add_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="right"
+                    android:hint="请输入活动名称"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/myLine"
+                android:layout_marginLeft="@dimen/dp_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电话号码"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_16" />
+
+                <EditText
+                    android:id="@+id/add_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="right"
+                    android:hint="请输入电话号码"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/myLine"
+                android:layout_marginLeft="@dimen/dp_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="组织者姓名"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_16" />
+
+                <EditText
+                    android:id="@+id/add_username"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="right"
+                    android:hint="请输入组织者姓名"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+            </LinearLayout>
+
+
+            <View
+                style="@style/myLine"
+                android:layout_marginLeft="@dimen/dp_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动地点"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_16" />
+
+                <EditText
+                    android:id="@+id/add_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="right"
+                    android:hint="请输入活动地址"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/myLine"
+                android:layout_marginLeft="@dimen/dp_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="每人参与费用"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_16" />
+
+                <EditText
+                    android:id="@+id/add_member"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="right"
+                    android:inputType="phone"
+                    android:hint="请输入金额"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/myLine"
+                android:layout_marginLeft="@dimen/dp_12" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动介绍"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_16" />
+
+                <TextView
+                    android:id="@+id/add_introduce"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="right"
+                    android:hint="请填写"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+            </LinearLayout>
+
+            <View style="@style/myLine" />
+
+
+            <View
+                style="@style/devider"
+                android:layout_height="@dimen/dp_12" />
+
+            <LinearLayout
+                android:id="@+id/add_min_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="最低人数"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_16" />
+
+                <TextView
+                    android:id="@+id/add_min_member_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未选择"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_18"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dp_5"
+                    android:src="@mipmap/jinru_back" />
+            </LinearLayout>
+
+            <View
+                style="@style/myLine"
+                android:layout_marginLeft="@dimen/dp_12" />
+
+
+            <LinearLayout
+                android:id="@+id/add_max_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="最多人数"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_16" />
+
+                <TextView
+                    android:id="@+id/add_max_member_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未选择"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_18"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dp_5"
+                    android:src="@mipmap/jinru_back" />
+            </LinearLayout>
+
+            <View style="@style/myLine" />
+
+            <View
+                style="@style/devider"
+                android:layout_height="@dimen/dp_12" />
+
+            <LinearLayout
+                android:id="@+id/add_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="约球开始时间"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_16" />
+
+                <TextView
+                    android:id="@+id/add_start_time_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未选择"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_18"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dp_5"
+                    android:src="@mipmap/jinru_back" />
+            </LinearLayout>
+
+            <View
+                style="@style/myLine"
+                android:layout_marginLeft="@dimen/dp_12" />
+
+            <LinearLayout
+                android:id="@+id/add_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="约球结束时间"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_16" />
+
+                <TextView
+                    android:id="@+id/add_end_time_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未选择"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_18"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dp_5"
+                    android:src="@mipmap/jinru_back" />
+            </LinearLayout>
+
+            <View
+                style="@style/myLine"
+                android:layout_marginLeft="@dimen/dp_12" />
+
+
+            <LinearLayout
+                android:id="@+id/add_must_know"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_high"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="发布须知"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="创建即表示同意"
+                    android:textColor="@color/text_orange"
+                    android:textSize="@dimen/size_14" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_18"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dp_5"
+                    android:src="@mipmap/jinru_back" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View style="@style/myLine" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45">
+
+        <Button
+            android:id="@+id/go_to_pay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_blue_3EA1FD"
+            android:text="发布"
+            android:textColor="@color/white_high"
+            android:textSize="@dimen/size_16" />
+
+        <Button
+            android:id="@+id/show_yinying"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/bg_white_trans_more" />
+
+    </RelativeLayout>
+
+</LinearLayout>

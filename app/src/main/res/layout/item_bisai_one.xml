@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/see"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/bisai_joinmember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_12"
+            android:text="199人参加"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/size_12"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="@dimen/dp_13"
+            android:paddingRight="@dimen/dp_13"
+            android:paddingBottom="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_12"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:id="@+id/center_contain"
+            >
+            
+            <ImageView
+                android:layout_width="@dimen/dp_13"
+                android:layout_height="@dimen/dp_18"
+                android:src="@mipmap/money"
+                />
+            <TextView
+                android:id="@+id/bisai_price"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="20/人"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_12"
+                android:paddingLeft="@dimen/dp_8"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/share"
+                />
+            
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="@dimen/dp_13"
+            style="@style/myLine"
+            android:background="@color/line_bg_trans_white"
+            android:layout_above="@id/center_contain"
+            />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_13"
+        android:background="@color/bg_gray_f0f2f5"/>
+
+</LinearLayout>

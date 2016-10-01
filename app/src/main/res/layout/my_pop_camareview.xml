@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_for_tv"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/camera_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_15"
+            android:text="拍照"
+            android:textColor="@color/text_black_5c"
+            android:textSize="@dimen/size_17" />
+
+        <View style="@style/myLine" />
+
+        <TextView
+            android:id="@+id/camera_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_15"
+            android:text="相册"
+            android:textColor="@color/text_black_5c"
+            android:textSize="@dimen/size_17" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/camera_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@drawable/shape_for_tv"
+        android:gravity="center"
+        android:padding="@dimen/dp_18"
+        android:text="取消"
+        android:textColor="@color/text_black_5c"
+        android:textSize="@dimen/size_17" />
+
+</LinearLayout>

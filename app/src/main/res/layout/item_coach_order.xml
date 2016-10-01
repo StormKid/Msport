@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_high"
+    android:gravity="center"
+    android:id="@+id/contain_alls"
+    android:orientation="vertical">
+
+
+    <View
+        style="@style/devider"
+        android:layout_height="@dimen/dp_12" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dp_12">
+
+            <TextView
+                android:id="@+id/order_coach_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="私教"
+                android:textColor="@color/text_black_5c"
+                android:textSize="@dimen/size_14" />
+
+            <TextView
+                android:id="@+id/order_coach_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已完成"
+                android:textColor="@color/text_orange"
+                android:textSize="@dimen/size_14" />
+
+
+        </LinearLayout>
+
+
+        <View style="@style/myLine" />
+
+        <LinearLayout
+            android:id="@+id/select_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_normal"
+            android:padding="@dimen/dp_12">
+
+            <ImageView
+                android:id="@+id/order_coach_image"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_65"
+                android:scaleType="fitXY"
+                android:src="@mipmap/show_img" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/order_coach_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="文海"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_16" />
+
+                <com.msport.clientmaster.view.MyTagViewGroup
+                    android:id="@+id/order_coach_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="最炫民族风课程"
+                    android:textColor="@color/text_gray_97"
+                    android:textSize="@dimen/size_14" />
+
+                <TextView
+                    android:id="@+id/order_coach_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="对学生有耐心，经历丰富，课堂气氛活跃"
+                    android:textColor="@color/text_gray_7A797B"
+                    android:textSize="@dimen/size_12" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/order_coach_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="¥4000"
+                android:textColor="@color/text_black_5c"
+                android:textSize="@dimen/size_14" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/myLine"
+            android:layout_marginLeft="@dimen/dp_12" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_12">
+
+            <TextView
+                android:id="@+id/zhongjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总价："
+                android:textSize="@dimen/size_14" />
+
+            <TextView
+                android:id="@+id/order_coach_totle_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/zhongjia"
+                android:text="¥4000"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/size_14" />
+
+            <TextView
+                android:id="@+id/order_coach_commit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shape_categroy_tagblue"
+                android:paddingBottom="@dimen/dp_3"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8"
+                android:paddingTop="@dimen/dp_3"
+                android:text="立即评价"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/size_14" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

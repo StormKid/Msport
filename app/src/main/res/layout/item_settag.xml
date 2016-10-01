@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/course_detail_show_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="优质培训"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingRight="@dimen/size_10"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingLeft="@dimen/size_10"
+        android:textColor="@color/text_gray_A3"
+        android:background="@drawable/shape_categroy_tagnone"
+        />
+
+
+</LinearLayout>

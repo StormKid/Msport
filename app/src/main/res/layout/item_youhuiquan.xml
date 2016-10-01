@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <View style="@style/devider"
+        android:layout_height="@dimen/dp_15"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/selector_normal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_12"
+            >
+            <TextView
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="优\n惠\n券"
+                android:textColor="@color/text_orange"
+                android:textSize="@dimen/size_24"
+            
+                />
+            
+            <com.msport.clientmaster.view.DashedLineView
+                android:layout_width="@dimen/size_0.5"
+                android:layout_height="match_parent"
+                android:background="@color/line_bg_d9"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/crips_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="仅限购买游泳课程使用"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_16"
+                    />
+                <TextView
+                    android:id="@+id/crips_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="满100减30元"
+                    android:textColor="@color/text_gray_97"
+                    android:textSize="@dimen/size_16"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    />
+                <TextView
+                    android:id="@+id/crips_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2016.07.07到期"
+                    android:textColor="@color/text_gray_97"
+                    android:textSize="@dimen/size_14"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/size_18"
+                />
+
+            <TextView
+                android:id="@+id/crips_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_red"
+                android:text="30"
+                android:textSize="@dimen/size_40"
+                />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/crips_choose"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:src="@mipmap/gou"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

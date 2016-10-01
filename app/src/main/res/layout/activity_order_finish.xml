@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/include_title" />
+
+    <ScrollView
+        android:id="@+id/contain_alls"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_110"
+                android:background="@color/bg_pink"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/order_finish_img"
+                    android:layout_width="@dimen/dp_48"
+                    android:layout_height="@dimen/dp_38"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/order_finish" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="你的订单已经完成"
+                    android:id="@+id/order_type_tv" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/order_finish_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/dp_12"
+                android:text="瑜伽课程"
+                android:textColor="@color/text_black_5c"
+                android:textSize="@dimen/size_14" />
+
+            <View style="@style/myLine" />
+
+            <FrameLayout
+                android:id="@+id/order_finish_change_vg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <include layout="@layout/item_vg_finish_change" />
+            </FrameLayout>
+
+
+            <View
+                style="@style/myLine"
+                android:layout_marginLeft="@dimen/dp_12" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:id="@+id/order_finish_total_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="总价：¥40"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+                <TextView
+                    android:id="@+id/order_finish_youhui_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="已经优惠¥0"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/myLine"
+                android:layout_marginLeft="@dimen/dp_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/dp_12">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_15"
+                    android:layout_height="@dimen/size_18"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:src="@mipmap/shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微动体育担保交易"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_13" />
+
+                <TextView
+                    android:id="@+id/order_finish_pay_price"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="实际付款：¥4000"
+                    android:textColor="@color/text_black_2f"
+                    android:textSize="@dimen/size_16" />
+
+            </LinearLayout>
+
+
+            <View style="@style/myLine" />
+
+            <View
+                style="@style/devider"
+                android:layout_height="@dimen/dp_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_12">
+
+
+                <TextView
+                    android:id="@+id/look_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="课程安排"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+
+            </LinearLayout>
+
+            <View style="@style/myLine" />
+
+
+            <LinearLayout
+                android:id="@+id/order_finish_tosee_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_normal"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:id="@+id/look_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上课地点："
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+                <TextView
+                    android:id="@+id/order_finish_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="徐东大街旭东那个地方的体育馆"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dp_3"
+                    android:src="@mipmap/jinru" />
+            </LinearLayout>
+
+            <View
+                style="@style/myLine"
+                android:layout_marginLeft="@dimen/dp_12" />
+
+            <LinearLayout
+                android:id="@+id/order_finish_tosee_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_normal"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="时间安排："
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+                <TextView
+                    android:id="@+id/order_finish_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2016.09.08-2018.09.08"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/look_course_list_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="查看课表"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_12" />
+
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/look_course_list_tv_to"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dp_3"
+                    android:src="@mipmap/jinru" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/order_finish_phone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <View
+                style="@style/myLine"
+                android:layout_marginLeft="@dimen/dp_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_normal"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系电话："
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14"
+                    android:id="@+id/textView5" />
+
+                <TextView
+                    android:id="@+id/order_finish_phonenum"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="15071219454"
+                    android:textColor="@color/text_blue"
+                    android:textSize="@dimen/size_14" />
+
+            </LinearLayout>
+            </LinearLayout>
+            <View style="@style/myLine" />
+
+            <View
+                style="@style/devider"
+                android:layout_height="@dimen/dp_12" />
+
+            <LinearLayout
+                android:id="@+id/order_finish_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/dp_12">
+
+                    <TextView
+                        android:id="@+id/code_titile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微动券"
+                        android:textColor="@color/text_black_5c"
+                        android:textSize="@dimen/size_14" />
+
+                    <TextView
+                        android:id="@+id/order_code_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="有效日期：2016-10-31"
+                        android:textColor="@color/text_black_5c"
+                        android:textSize="@dimen/size_14" />
+
+                </RelativeLayout>
+
+                <View style="@style/myLine" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/dp_12">
+
+                    <TextView
+                        android:id="@+id/order_code_use"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="未使用"
+                        android:textColor="@color/text_black_5c"
+                        android:textSize="@dimen/size_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="验证码：12345678901"
+                        android:textColor="@color/text_black_5c"
+                        android:textSize="@dimen/size_14"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/order_code_num" />
+
+                </RelativeLayout>
+
+
+            <View
+                style="@style/devider"
+                android:layout_height="@dimen/dp_12" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单详情"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+                <TextView
+                    android:id="@+id/order_finish_billid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="订单编号：122234455667788"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_13" />
+            </LinearLayout>
+
+            <View style="@style/myLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    android:id="@+id/order_finish_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="付款人：文海"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+                <TextView
+                    android:id="@+id/order_finish_paytype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:text="支付方式：支付宝支付"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+                <TextView
+                    android:id="@+id/order_finish_paytime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="支付时间：2016.07.07  18:20"
+                    android:textColor="@color/text_black_5c"
+                    android:textSize="@dimen/size_14" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/order_show_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dp_12"
+        android:visibility="visible">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/zhongjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总价："
+            android:textSize="@dimen/size_14" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/order_totle_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/zhongjia"
+            android:text="¥4000"
+            android:textColor="@color/text_red"
+            android:textSize="@dimen/size_14" />
+
+        <TextView
+            android:id="@+id/order_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_categroy_tagdo"
+            android:paddingBottom="@dimen/dp_3"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_3"
+            android:text="立即支付"
+            android:textColor="@color/text_orange"
+            android:textSize="@dimen/size_14" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
